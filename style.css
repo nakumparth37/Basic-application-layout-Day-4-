@@ -6,11 +6,65 @@ body{
 
 .app_header{
    display: flex;
+   padding: 1rem;
+   /* border: 2px solid black; */
+   margin: 0.3rem;
+   background-color: #4169e152;
 }
 
-.app_header div a{
-    overflow: hidden;
+.app_header .logo{
+    /* border: 2px solid black; */
+    padding: 0.3rem; 
+    justify-items: start;
+
+}
+
+.app_header .nav_item{
+    /* border: 2px solid black ; */
+    padding: 0.3rem; 
+    float: right;
+    margin-left: 80%;
+}
+.app_header .nav_item a{ 
+    /* border: 2px solid black; */
+    padding: 0.3rem; 
     text-decoration: none;
     color: black;
+    
+}
+
+
+
+.conteanier{
+    display: flex;
+    padding: 0.3rem;
+}
+
+.conteanier div{
     flex-direction: row;
+    padding: 0.5rem;
+    border: 2px solid black;
+    margin: 0.3rem;
+}
+.conteanier .side_bar{
+    width: 30%;
+}
+
+.main_contnat{
+    text-align: justify;
+    margin: 1rem;
+    background-color: #4169e12e;
+}
+
+.des{
+    display: flex;
+}
+    
+
+
+.app_footer{
+    padding: 1rem;
+    text-align: center;
+    border: 2px solid black;
+    margin: 0.3rem;
 }
