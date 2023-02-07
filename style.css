@@ -1,70 +1,108 @@
-body{
+body {
     margin: 0;
     padding: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(0, 0, 49)
 }
 
-.app_header{
-   display: flex;
-   padding: 1rem;
-   /* border: 2px solid black; */
-   margin: 0.3rem;
-   background-color: #4169e152;
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-.app_header .logo{
-    /* border: 2px solid black; */
-    padding: 0.3rem; 
-    justify-items: start;
-
-}
-
-.app_header .nav_item{
-    /* border: 2px solid black ; */
-    padding: 0.3rem; 
-    float: right;
-    margin-left: 80%;
-}
-.app_header .nav_item a{ 
-    /* border: 2px solid black; */
-    padding: 0.3rem; 
-    text-decoration: none;
-    color: black;
-    
+::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 49)
 }
 
 
+::-webkit-scrollbar-thumb {
+    background: #03a9f4;
+    border-radius: 10rem;
 
-.conteanier{
+}
+
+/* Style of the "NAV_BAR" */
+.app_header {
     display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0.3rem;
+    background-color: rgb(0, 0, 49);
+    cursor: pointer;
+}
+
+.app_header ul li {
+    list-style: none;
+    display: inline-block;
     padding: 0.3rem;
 }
 
-.conteanier div{
+.logo {
+    text-decoration: none;
+    color: #03a9f4;
+    padding: 0.5rem;
+    font-size: 1.3rem;;
+}
+
+.app_header ul li a {
+    text-decoration: none;
+    color: #03a9f4;
+    padding: 0.5rem;
+}
+
+.nav_bar li a:hover {
+    background-color: #03a9f4;
+    border-radius: 1rem;
+    color: white;
+    transition: all 0.5s ease 0s;
+}
+
+
+
+/* Styleing the "conteanier" */
+.conteanier {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem;
+    color: white;
+    background-color: rgb(0, 0, 49);
+}
+
+.conteanier div {
     flex-direction: row;
     padding: 0.5rem;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    text-align: justify;
     margin: 0.3rem;
 }
-.conteanier .side_bar{
-    width: 30%;
+
+
+/* styleing the "side_bar" */
+.conteanier .side_bar {
+    display: inline-block;
 }
 
-.main_contnat{
+.AD-1 {
+    /* box-shadow: 5px 9px 15px rgba(255, 255, 255, 0.788); */
+    overflow-y: scroll;
+    height: 90%;
+    background-color: #03a9f47a
+}
+
+
+/* styleing the "main contect" */
+.main_contnat {
     text-align: justify;
     margin: 1rem;
-    background-color: #4169e12e;
+   
 }
 
-.des{
+.des {
     display: flex;
 }
-    
 
-
-.app_footer{
+.app_footer {
     padding: 1rem;
     text-align: center;
-    border: 2px solid black;
     margin: 0.3rem;
+    color: white;
 }
